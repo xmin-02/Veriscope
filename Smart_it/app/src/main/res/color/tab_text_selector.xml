@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 선택된 상태: 흰색 텍스트 -->
+    <item android:color="@android:color/white" android:state_selected="true" />
+    <!-- 비선택 상태: 주요 색상 텍스트 -->
+    <item android:color="@color/primary" />
+</selector>

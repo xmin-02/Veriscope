@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- 배경 원 -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M54,0C24.18,0 0,24.18 0,54s24.18,54 54,54s54,-24.18 54,-54S83.82,0 54,0z"/>
+    
+    <!-- 돋보기 모양 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M40,25c8.28,0 15,6.72 15,15s-6.72,15 -15,15s-15,-6.72 -15,-15S31.72,25 40,25z M70,70l-15,-15"/>
+    
+    <!-- 체크마크 -->
+    <path
+        android:fillColor="#27AE60"
+        android:strokeWidth="4"
+        android:strokeColor="#27AE60"
+        android:pathData="M65,35l5,5l10,-10"/>
+    
+    <!-- V 문자 (Veriscope) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M30,75l8,15l8,-15"/>
+</vector>

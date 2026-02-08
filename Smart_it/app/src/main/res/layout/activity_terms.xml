@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <!-- 상단 제목 -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 서비스 이용 안내"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- 약관 내용 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:id="@+id/layoutTermsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvSectionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️ 중요 안내사항"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#E74C3C"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. 본 서비스는 참고용 도구입니다"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#2C3E50"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Veriscope는 뉴스의 신뢰도를 분석하는 참고 도구로, 절대적인 판단 기준이 아닙니다.\n• 분석 결과는 AI 기반 알고리즘을 통한 것으로 오류가 있을 수 있습니다."
+                    android:textSize="14sp"
+                    android:textColor="#34495E"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. 최종 판단은 사용자의 책임입니다"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#2C3E50"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• 뉴스의 허위 여부에 대한 최종 판단은 반드시 사용자가 직접 해야 합니다.\n• 공식 출처, 정부 발표, 검증된 언론사 등을 통해 추가 확인하시기 바랍니다.\n• 본 서비스 결과만으로 중요한 결정을 내리지 마십시오."
+                    android:textSize="14sp"
+                    android:textColor="#34495E"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. 법적 책임 제한"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#2C3E50"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• 본 서비스는 공식적인 팩트체크 기관이 아니며, 법적 공신력을 갖지 않습니다.\n• 서비스 이용으로 인한 직간접적 손해에 대해 개발자는 책임을 지지 않습니다.\n• 분석 결과의 정확성을 보장하지 않으며, 참고용으로만 사용하시기 바랍니다."
+                    android:textSize="14sp"
+                    android:textColor="#34495E"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- 동의 체크박스 및 버튼 영역 -->
+        <LinearLayout
+            android:id="@+id/layoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <!-- 체크박스 영역 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <CheckBox
+                    android:id="@+id/cbAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="위 내용을 이해했으며 동의합니다"
+                    android:textSize="16sp"
+                    android:textColor="#2C3E50"
+                    android:buttonTint="@color/primary" />
+
+            </LinearLayout>
+
+            <!-- 버튼 영역 -->
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_primary"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:elevation="4dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

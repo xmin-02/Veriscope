@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="splash_background">#FFFFFF</color>
+    <color name="primary_blue">#2196F3</color>
+    
+    <!-- 앱 기본 색상 -->
+    <color name="primary">#2196F3</color>
+    <color name="primary_light">#E3F2FD</color>
+    <color name="background_light">#F8F9FA</color>
+    <color name="light_gray">#E0E0E0</color>
+    
+    <!-- 텍스트 색상 -->
+    <color name="text_primary">#1a1a1a</color>
+    <color name="text_secondary">#6c757d</color>
+    
+    <!-- 상태 색상 -->
+    <color name="error">#dc3545</color>
+    <color name="success">#28a745</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#FF9800</color>
+    
+    <!-- 배경 및 UI 색상 -->
+    <color name="background_gray">#F5F5F5</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="text_tertiary">#9E9E9E</color>
+    
+    <!-- 정보 카드 색상 -->
+    <color name="info_background">#F0F8FF</color>
+    <color name="info_border">#D1ECF1</color>
+    
+    <!-- 이메일 찾기 결과 색상 -->
+    <color name="result_success_bg">#E8F5E8</color>
+    <color name="result_success_text">#2E7D32</color>
+    <color name="result_info_bg">#E3F2FD</color>
+    <color name="result_info_text">#1565C0</color>
+    <color name="result_warning_bg">#FFF3E0</color>
+    <color name="result_warning_text">#E65100</color>
+
+    <!-- 추가 UI 색상 -->
+    <color name="text_dark">#1A1A1A</color>
+    <color name="tab_inactive">#9E9E9E</color>
+    <color name="tab_inactive_bg">#9E9E9E</color>
+    <color name="tab_inactive_text">#CACACA</color>
+    <color name="table_header">#F5F5F5</color>
+    <color name="row_pressed">#E0E0E0</color>
+</resources>

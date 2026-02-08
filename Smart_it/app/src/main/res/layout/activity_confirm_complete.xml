@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_light"
+    android:padding="32dp">
+
+    <!-- 리워드 카드 (클릭 시 리워드 페이지로 이동) -->
+    <LinearLayout
+        android:id="@+id/rewardCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_primary"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/rewardPointsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 P"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/rewardMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="리워드 지급이 완료되었습니다!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/rewardSubMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="눌러서 리워드 상세 보기"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- 허위 기사 제보 버튼 (신뢰도 낮을 때만 표시) -->
+    <Button
+        android:id="@+id/reportButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/button_red"
+        android:text="허위 기사 제보하고 100P 추가로 받기 →"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- 홈으로 가기 버튼 -->
+    <Button
+        android:id="@+id/goHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_white"
+        android:text="홈으로 가기"
+        android:textColor="@color/primary_blue"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="24dp" />
+
+</LinearLayout>

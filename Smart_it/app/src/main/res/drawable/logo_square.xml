@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- 둥근 사각형 배경 -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M20,10 L100,10 A10,10 0 0,1 110,20 L110,100 A10,10 0 0,1 100,110 L20,110 A10,10 0 0,1 10,100 L10,20 A10,10 0 0,1 20,10 z" />
+    
+    <!-- 중앙 돋보기 아이콘 -->
+    <group android:translateX="60" android:translateY="60">
+        <!-- 돋보기 원 -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="5"
+            android:pathData="M-15,-8A12,12 0 1,1 -15,16A12,12 0 1,1 -15,-8z"/>
+        
+        <!-- 돋보기 손잡이 -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="5"
+            android:strokeLineCap="round"
+            android:pathData="M-5,14L8,27"/>
+        
+        <!-- 체크마크 -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M-20,-4L-16,0L-12,-6"/>
+    </group>
+
+</vector>
