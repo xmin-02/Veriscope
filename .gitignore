@@ -1,0 +1,33 @@
+# === Android ===
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+Smart_it/local.properties
+Smart_it/.gradle/
+Smart_it/.idea/
+Smart_it/.kotlin/
+Smart_it/app/build/
+
+# === Python ===
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# === OpenVINO 캐시/모델 (용량 큼) ===
+ov_cache/
+ov_ir/
+
+# === 데이터 파일 (용량 큼) ===
+smart_it_index.pkl
+
+# === DB 파일 (로컬 데이터) ===
+database/veriscope.db
